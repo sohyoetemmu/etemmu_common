@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/*
+---------------------------------------------
+* File       : et-strap.css
+* Author     : Etemmu Studio
+* Guideline  : ETstyle.0.1(Beta)
+---------------------------------------------
+* Dependency : css/reset.css
+---------------------------------------------
+* CONTENTS:
+* 1. Typography
+* 2. Container
+* 3. Column
+* 4. Popup
+---------------------------------------------
+*/
+
+/*
+---------------------------------------------
+* Typography
+---------------------------------------------
+*/
+
+a {color: #eeeeee;}
+a:hover {color: #dcdcdc;}
+a.accent {color: #ffd44f;}
+a.accent:hover {color: #ffc800;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.accent-color {color: #ffd44f;}
+.title {font-size: 25px;line-height: 40px;font-weight: 400;word-break: keep-all;}
+
+/*
+---------------------------------------------
+* Container
+---------------------------------------------
+*/
+
+section,.row_wrap, .et-container-wrap {width: 100%; position: relative;}
+.section_ratio {padding-left: 50px; padding-right: 50px;}
+.section_ratio_left {padding-left: 50px;}
+.section_ratio_right {padding-right: 50px;}
+.clear_col:after {content: ''; display: block; clear: both;}
+.et-container-inner {width : 100%; max-width: 1200px; margin: 0 auto;}
+.et-col-wrap {width: calc(100% + 20px); position: relative;}
+.gutter_ratio {margin-left: -10px; margin-right: -10px; box-sizing: border-box;}
+.row_spacing {margin-top: 150px; margin-bottom: 150px;}
+.row_spacing_top {margin-top: 150px;}
+.row_spacting_bottom {margin-bottom: 150px;}
+.section_spacing {padding-top: 100px; padding-bottom: 100px;}
+.section_spacing_top {padding-top: 100px;}
+.section_spacing_bottom {padding-bottom: 100px;}
+
+/*
+---------------------------------------------
+* Column
+---------------------------------------------
+*/
+
+.col_bottom1 {margin-bottom: 20px;} 
+.col_bottom2 {margin-bottom: 30px;}
+.col_bottom3 {margin-bottom: 40px;}
+.col_bottom4 {margin-bottom: 50px;}
+.col_bottom5 {margin-bottom: 80px;}
+.col {float: left; min-height: 1px;}
+.col_right {float: right; min-height: 1px;}
+.col_gutter {padding-left: 10px; padding-right: 10px; box-sizing: border-box;}
+.col-et-1 {width: 8.33333333333%;}
+.col-et-2 {width: 16.6666666667%;}
+.col-et-3 {width: 25%;}
+.col-et-4 {width: 33.3333333333%;}
+.col-et-5 {width: 41.6666666667%;}
+.col-et-6 {width: 50%;}
+.col-et-7 {width: 58.3333333333%;}
+.col-et-8 {width: 66.6666666667%;}
+.col-et-9 {width: 75%;}
+.col-et-10 {width: 83.33333333333%;}
+.col-et-11 {width: 91.33333333337%;}
+.col-et-12 {width: 100%;}
+
+
+/*
+---------------------------------------------
+* Popup
+---------------------------------------------
+*/
+
+#popup {
+    width: 100%;
+    min-width: 1280px;
+    height: calc(100% - 10px);
+    background-color: #0a163a;
+    position: fixed;
+    top: 10px;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+#popup.active, #popup>.popup_contents.active {display: block;}
+#popup>.popup_contents {
+    max-width: 450px;
+    width: 100%;
+    margin: 230px auto 190px auto;
+    background-color: #27314f;
+    box-sizing: border-box;
+    padding: 37px 40px;
+    display: none;
+    position: relative;
+}
+#popup>.popup_contents>.popup_close {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    cursor: pointer;
+    font-size: 22px;
+}
+#popup>.popup_contents>.popup_close:hover {color: #ffd44f;}
